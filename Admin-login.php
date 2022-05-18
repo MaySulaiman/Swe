@@ -100,9 +100,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             var navLinks = document.getElementById("navLinks");
 
             function search() {
-                 url = 'Admin-Page.php?sort='+document.getElementById("srch").value;
-                 window.open(url);
-            }
+         url = "http://google.com"+'/search?q='+document.getElementById("srch").value;
+         window.open(url);
+     }
   
             function hideBurger() {
                 navLinks.style.right="-300px";
